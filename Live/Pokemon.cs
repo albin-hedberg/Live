@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LiveKodPokemon
+namespace Live
 {
     internal class Pokemon
     {
@@ -23,19 +23,20 @@ namespace LiveKodPokemon
             set { _name = value; }
         }
 
-        private string _type;
-        public string Type  // Properties (get/set funktioner)
+        private PokeTypes _type;
+        public PokeTypes Type  // Properties (get/set funktioner)
         {
-            get { return _name; }
-            set
-            {
-                if (value == "Tjohoo")
-                {
-                    Console.WriteLine("Tjohoo är inte en giltlig typ!");
-                    return;
-                }
-                _name = value;
-            }
+            get { return _type; }
+            set { _type = value; }
+            //set
+            //{
+            //    if (value == "Tjohoo")
+            //    {
+            //        Console.WriteLine("Tjohoo är inte en giltlig typ!");
+            //        return;
+            //    }
+            //    _name = value;
+            //}
         }
 
         // ----------- prop -----------
@@ -63,7 +64,7 @@ namespace LiveKodPokemon
             ;
         }
 
-        public Pokemon(string name, string type)
+        public Pokemon(string name, PokeTypes type)
         {
             _name = name;
             _type = type;

@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace Live
 {
-    internal class Trainer
+    public enum PokeTypes
     {
-        public static void Greeting()
-        {
-            Console.WriteLine("Hi!");
-        }
+        // Pascal Case
+        Electric = 0,
+        Fire,
+        Water,
+        Grass,
+        Rock,
+        Psychic
     }
 }

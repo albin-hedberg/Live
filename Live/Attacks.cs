@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Live
 {
-    internal class Trainer
+    public enum Attacks
     {
-        public static void Greeting()
-        {
-            Console.WriteLine("Hi!");
-        }
+        // Pascal Case
+        QuickAttack,
+        Scratch,
+        Ember,
+        Thunderbolt
     }
 }
